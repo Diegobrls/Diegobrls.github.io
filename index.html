@@ -10,239 +10,313 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Enlace font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Enlaze al estilo css-->
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
+<!-- BARRA DE NAVEGACION -->
+
 <body>
-    <div id="wrapper" class="container">
-        <nav class="navbar bg-danger navbar-expand-lg fw-bold">
-            <div class="container">
-                <a href="#" class="navbar-brand text-light">HOME</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-                    aria-controls="navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
+    <nav class="navbar bg-danger navbar-expand-lg fw-bold">
+        <div class="container">
+            <a href="#" class="navbar-brand text-light">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                aria-controls="navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse py-lg-0 py-4" id="navbarSupportedContent">
+                <ul class="px-4 navbar-nav d-flex gap-4 mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#uno" class="nav-link text-light">Seccion 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#dos" class="nav-link text-light">Seccion 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tres" class="nav-link text-light">Seccion 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#footer" class="nav-link text-light">Seccion 4</a>
+                    </li>
+                </ul>
+                <button class="btn btn-dark text-light fw-bold rounded-pill mx-3 mt-lg-0 mt-3">
+                    Contact us
                 </button>
-                <div class="collapse navbar-collapse py-lg-0 py-4" id="navbarSupportedContent">
-                    <ul class="px-4 navbar-nav d-flex gap-4 mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a href="#uno" class="nav-link text-light">Seccion 1</a>
+            </div>
+        </div>
+    </nav>
+    <!-- FIN BARRA DE NAVEGACION -->
+
+    <!-- COMIENZO HERO SECTION -->
+    <section id="hero">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/monte_fuji.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/templo.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/arco_agua.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- FIN HERO SECTION -->
+
+    <!-- COMIENZO SECCIÓN ELECCIÓN -->
+    <section id="hero" class="hero mt-0">
+        <div class="container position-relative">
+            <div class="row gy-5" data-aos="fade-in">
+                <div
+                    class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+                    <h2>¡Bienvenido a Tokyo!</h2>
+                    <h3>東京へようこそ！</h3>
+                    <p>Sumérgete en la fascinante metrópolis de Tokio y descubre sus tesoros ocultos mientras exploras
+                        el corazón de la cultura japonesa. </p>
+                    <!-- <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="#about" class="btn-get-started">Get Started</a>
+                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                            class="glightbox btn-watch-video d-flex align-items-center"><i
+                                class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                    </div> -->
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img src="assets/img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out"
+                        data-aos-delay="100">
+                </div>
+            </div>
+        </div>
+
+        <div class="icon-boxes position-relative">
+            <div class="container position-relative">
+                <div class="row gy-4 mt-5">
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-easel"></i></div>
+                            <p><i class="far fa-plane"></i></p>
+                            <h4 class="title"><a href="" class="stretched-link">VUELO</a></h4>
+                        </div>
+                    </div><!--End Icon Box -->
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-gem"></i></div>
+                            <h4 class="title"><a href="" class="stretched-link">ESTANCIA</a></h4>
+                        </div>
+                    </div><!--End Icon Box -->
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-geo-alt"></i></div>
+                            <h4 class="title"><a href="" class="stretched-link">GASTRONOMIA</a></h4>
+                        </div>
+                    </div><!--End Icon Box -->
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-command"></i></div>
+                            <h4 class="title"><a href="" class="stretched-link">OCIO</a></h4>
+                        </div>
+                    </div><!--End Icon Box -->
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!-- FIN SECCION ELECCION -->
+
+    <section id="uno">
+        <h1>SECCION 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed risus sem. Nullam dignissim, metus
+            a eleifend mattis, nulla felis congue elit, at porta ex ex a quam. Suspendisse in diam quis ipsum
+            feugiat feugiat. Ut id congue turpis, nec porta est. Mauris pharetra urna eget hendrerit viverra.
+            Nunc tempus cursus ex, nec molestie eros ullamcorper in. Fusce id enim et lorem hendrerit dapibus.
+        </p>
+
+        <p>Pellentesque congue odio placerat, congue risus quis, lobortis dolor. Suspendisse sagittis, ante ac
+            fringilla porttitor, ex nisl euismod odio, a pulvinar libero justo a nisl. Donec ex elit, mollis sed
+            pellentesque non, blandit ut orci. Suspendisse ut lacus consectetur, mollis libero ac, pulvinar
+            metus. Suspendisse congue sed justo sed scelerisque. In viverra tellus tortor, sit amet consequat
+            metus placerat ut. Phasellus nec purus placerat, mollis est non, congue erat. Morbi lacinia orci
+            ante, ut ullamcorper erat feugiat id. In viverra convallis volutpat. Sed in velit sed ex malesuada
+            suscipit. In pulvinar in urna vel ultrices.</p>
+
+        <p>Proin ornare ornare condimentum. Fusce consectetur, erat rhoncus eleifend auctor, augue risus ornare
+            mi, et ultricies metus velit ut lacus. In tristique a est eu pretium. Orci varius natoque penatibus
+            et magnis dis parturient montes, nascetur ridiculus mus. Aenean molestie arcu nec metus dapibus
+            cursus. Morbi porttitor tristique eros, non efficitur eros ultricies sit amet. Quisque euismod
+            tellus et dignissim lacinia. Aenean mollis purus nec metus viverra ullamcorper. Nulla ac fringilla
+            nibh.</p>
+
+        <p>Morbi faucibus efficitur ligula a venenatis. Nam quis pretium diam. Duis euismod finibus lacus,
+            vitae egestas magna cursus a. Ut efficitur congue enim, id facilisis est. Vestibulum posuere
+            tincidunt purus vitae convallis. Praesent consequat eget metus et ultrices. Aliquam ut massa tortor.
+            Pellentesque ultricies sed urna et faucibus. Pellentesque velit lectus, placerat in eleifend in,
+            blandit non nulla.</p>
+
+        <p>Duis facilisis ornare lacus, sit amet volutpat odio finibus non. Duis quis metus non enim
+            ullamcorper ornare. Nulla aliquet lacus felis, ac porta eros consectetur quis. Vivamus malesuada
+            augue convallis dictum vehicula. Cras eu lacus vitae ex rutrum maximus lobortis suscipit nulla.
+            Aliquam vitae tortor et felis porta posuere ut eu lectus. Vivamus luctus augue turpis, sit amet
+            accumsan mauris maximus at. Fusce tempor rutrum justo, vitae tincidunt dui tincidunt sit amet.
+            Suspendisse eget sollicitudin odio. Nulla fermentum metus enim, pellentesque lacinia felis vulputate
+            vel. Ut eu lacus ullamcorper, scelerisque nulla et, dapibus augue. Duis ac urna nec felis ultricies
+            ornare nec vitae ligula.</p>
+    </section>
+    <section id="dos">
+        <h1>SECCION 2</h1>
+        <p>Sed a commodo dolor. Duis aliquam fermentum ligula eleifend lobortis. Morbi volutpat scelerisque
+            libero eu viverra. Sed vehicula maximus eros, ut sagittis neque tristique interdum. Integer vitae
+            odio eget mi euismod iaculis sit amet vel quam. Duis dictum facilisis accumsan. Morbi dapibus nunc
+            eget ullamcorper vehicula. Nam in lacus non orci lacinia pretium ut a ex. Vivamus ultricies ac
+            mauris quis sollicitudin. Nullam lobortis arcu pellentesque tellus consectetur, id eleifend odio
+            gravida. Donec eu vehicula sapien, et vestibulum nunc. Sed laoreet iaculis lectus, at fermentum
+            velit commodo vitae. Phasellus pharetra dictum libero, ut tincidunt metus vehicula ut. Sed quis erat
+            vel dui posuere congue ac dictum nibh. Aenean a maximus tellus, ac lobortis enim.</p>
+
+        <p>Praesent pulvinar turpis et lorem tristique aliquam. In vestibulum velit et tortor tempor imperdiet.
+            Morbi tempor lectus leo, in sagittis orci volutpat id. In lacinia tincidunt vehicula. Suspendisse
+            gravida euismod venenatis. Cras vel nibh ac elit sollicitudin congue. Nam non laoreet purus. Morbi
+            id libero elementum, iaculis augue eu, euismod quam. Duis ut magna in arcu tincidunt laoreet. In
+            tincidunt, quam volutpat dapibus gravida, libero tellus efficitur nunc, a convallis odio magna eget
+            est. Phasellus sed sem nisi.</p>
+
+        <p>Etiam pretium tellus justo, at efficitur tellus suscipit id. In ullamcorper purus sed justo
+            tincidunt lacinia. Donec pulvinar non augue id molestie. Aenean tellus nisl, tincidunt ac leo nec,
+            ultrices accumsan nibh. Cras congue pharetra ante, eget porttitor quam pellentesque ut. Phasellus
+            non commodo dolor. Aenean porta vel turpis in varius.</p>
+
+        <p>Etiam elit neque, porta vel vehicula vitae, tincidunt et dui. Aliquam ullamcorper et ipsum ac
+            venenatis. Integer tincidunt nulla id dui ultrices, quis egestas orci maximus. Morbi placerat dictum
+            odio, et pulvinar dui rhoncus ac. Nunc lacinia tincidunt tincidunt. Etiam at orci nec erat vulputate
+            congue. Vestibulum et tincidunt tellus. Cras arcu enim, pellentesque consequat mauris eget,
+            ultricies auctor erat. Curabitur non massa eget lorem tincidunt posuere sed id lectus. Nulla vel
+            scelerisque est. Integer eget suscipit urna. Donec et sapien id lacus varius vulputate vel at sem.
+            Donec eget nulla eget purus mollis sagittis et nec ante. Aliquam dictum consequat lacus, sit amet
+            efficitur mi sagittis sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <p>Nullam finibus, ipsum sit amet molestie ultricies, massa ligula viverra quam, quis imperdiet quam
+            nisl nec ligula. Sed sit amet diam lorem. Aliquam consectetur in metus eget consectetur. Morbi
+            congue massa sapien, vel vulputate leo interdum sit amet. Morbi dictum, orci eu gravida rhoncus,
+            orci mauris convallis sapien, at volutpat risus tortor nec magna. Nullam vulputate nisi et faucibus
+            placerat. Donec auctor dui lacus, et facilisis nisi venenatis at. In varius arcu eu lectus
+            pellentesque, at scelerisque lorem pharetra. Vivamus mauris quam, imperdiet sed mollis at, varius
+            vitae augue. Mauris pellentesque cursus arcu eget aliquam. In leo quam, vulputate nec nisi eu,
+            vestibulum tincidunt nibh.</p>
+    </section>
+    <section id="tres">
+        <h1>SECCION 3</h1>
+        <p>Cras sit amet nibh orci. Praesent sodales urna vitae augue malesuada, eget tincidunt purus
+            condimentum. Aliquam fermentum leo sollicitudin dignissim tincidunt. Suspendisse rhoncus, nunc vitae
+            porta fringilla, orci ipsum ultrices mi, quis tempus massa sapien sit amet orci. Integer lacinia
+            efficitur ex. Pellentesque iaculis ut ligula vel viverra. Sed eget enim quis tortor rutrum euismod.
+            Duis accumsan consectetur lacus, sit amet mollis quam. Nullam luctus tortor sit amet felis convallis
+            dictum. Suspendisse malesuada auctor luctus. In egestas convallis sem et fermentum. Curabitur
+            lacinia erat vel ex vestibulum bibendum. Sed lobortis augue dolor, sed maximus ipsum tristique eget.
+        </p>
+
+        <p>Curabitur dolor est, tempor et sem ut, tincidunt vestibulum libero. Phasellus eu tempor est, sed
+            placerat est. Sed interdum mauris a ante fermentum sollicitudin. Etiam neque nulla, congue ut
+            accumsan nec, pharetra a diam. Duis at interdum purus, vel tempor purus. Vestibulum porta arcu vitae
+            purus tempus pellentesque. Morbi scelerisque lacus vulputate, varius mauris ac, condimentum augue.
+            Nunc volutpat fringilla molestie. Aliquam fermentum pharetra ante et pretium. Sed vulputate neque et
+            egestas pharetra. Maecenas tincidunt sed orci vitae accumsan. Praesent malesuada velit augue, sit
+            amet consequat risus lobortis id. Aenean sed nisi vulputate, vulputate risus in, feugiat lacus.</p>
+
+        <p>Phasellus convallis tortor dolor, at lacinia metus pellentesque quis. Curabitur commodo convallis
+            eros vel vulputate. Vestibulum aliquam justo augue, a accumsan libero mollis vitae. Curabitur non
+            mauris non purus egestas accumsan sed at diam. In hac habitasse platea dictumst. Curabitur efficitur
+            metus eu erat pulvinar, accumsan rutrum sapien scelerisque. Vestibulum tempor condimentum massa, ut
+            venenatis mauris ornare vitae. Vivamus nec tellus mollis, mollis mauris id, placerat mi. Sed tempor
+            mi arcu, non placerat turpis vulputate ut. Quisque vitae condimentum dui. Nulla interdum mauris
+            dolor, ut malesuada lorem ornare non.</p>
+
+        <p>Suspendisse potenti. Cras et metus nunc. In vel purus imperdiet, maximus massa id, tempus ex.
+            Vivamus congue efficitur commodo. Nam malesuada sem sit amet nunc finibus, ac suscipit ante lacinia.
+            Sed ac scelerisque odio. Fusce mattis odio et vulputate congue. Aenean in condimentum massa. Donec
+            sed ornare quam. Nam at velit nec sem volutpat lacinia. Nunc tincidunt euismod metus. Vestibulum a
+            ultrices orci. Etiam nec tincidunt nibh, eu placerat dolor. Duis augue nisl, sollicitudin vel
+            accumsan a, iaculis ac arcu. Etiam quis mauris ac odio interdum iaculis. Donec ultricies mollis orci
+            nec commodo.</p>
+
+        <p>Nam id sodales nunc. In malesuada tortor sit amet dui ullamcorper, ac elementum sapien finibus.
+            Mauris fringilla tortor et ipsum accumsan, consequat dignissim libero faucibus. Aliquam varius
+            tincidunt nunc, quis scelerisque magna suscipit ultrices. Vivamus porttitor orci eget pretium
+            facilisis. Duis non semper velit. Donec convallis porta metus.</p>
+    </section>
+    <footer class="bg-danger text-white">
+        <!-- Grid container -->
+        <div class="container-lg p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">About Title</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                        atque ea quis molestias. Fugiat pariatur maxime quis culpa
+                        corporis vitae repudiandae aliquam voluptatem veniam, est atque
+                        cumque eum delectus sint!
+                    </p>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Line 1</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#dos" class="nav-link text-light">Seccion 2</a>
+                        <li>
+                            <a href="#!" class="text-white">Link 2</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#tres" class="nav-link text-light">Seccion 3</a>
+                        <li>
+                            <a href="#!" class="text-white">Link 3</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#footer" class="nav-link text-light">Seccion 4</a>
+                        <li>
+                            <a href="#!" class="text-white">Link 4</a>
                         </li>
                     </ul>
-                    <button class="btn btn-dark text-light fw-bold rounded-pill mx-3 mt-lg-0 mt-3">
-                        Contact us
-                    </button>
                 </div>
-            </div>
-        </nav>
-
-        <section id="hero">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/img/monte_fuji.jpeg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/img/templo.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/img/arco_agua.jpg" class="d-block w-100" alt="...">
-                    </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <p><i class="fa fa-envelope-o mr-3"></i> info@hsdf.com</p>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <!--Grid column-->
             </div>
-        </section>
-        <section id="uno">
-            <h1>SECCION 1</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed risus sem. Nullam dignissim, metus
-                a eleifend mattis, nulla felis congue elit, at porta ex ex a quam. Suspendisse in diam quis ipsum
-                feugiat feugiat. Ut id congue turpis, nec porta est. Mauris pharetra urna eget hendrerit viverra.
-                Nunc tempus cursus ex, nec molestie eros ullamcorper in. Fusce id enim et lorem hendrerit dapibus.
-            </p>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2021 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Project.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 
-            <p>Pellentesque congue odio placerat, congue risus quis, lobortis dolor. Suspendisse sagittis, ante ac
-                fringilla porttitor, ex nisl euismod odio, a pulvinar libero justo a nisl. Donec ex elit, mollis sed
-                pellentesque non, blandit ut orci. Suspendisse ut lacus consectetur, mollis libero ac, pulvinar
-                metus. Suspendisse congue sed justo sed scelerisque. In viverra tellus tortor, sit amet consequat
-                metus placerat ut. Phasellus nec purus placerat, mollis est non, congue erat. Morbi lacinia orci
-                ante, ut ullamcorper erat feugiat id. In viverra convallis volutpat. Sed in velit sed ex malesuada
-                suscipit. In pulvinar in urna vel ultrices.</p>
-
-            <p>Proin ornare ornare condimentum. Fusce consectetur, erat rhoncus eleifend auctor, augue risus ornare
-                mi, et ultricies metus velit ut lacus. In tristique a est eu pretium. Orci varius natoque penatibus
-                et magnis dis parturient montes, nascetur ridiculus mus. Aenean molestie arcu nec metus dapibus
-                cursus. Morbi porttitor tristique eros, non efficitur eros ultricies sit amet. Quisque euismod
-                tellus et dignissim lacinia. Aenean mollis purus nec metus viverra ullamcorper. Nulla ac fringilla
-                nibh.</p>
-
-            <p>Morbi faucibus efficitur ligula a venenatis. Nam quis pretium diam. Duis euismod finibus lacus,
-                vitae egestas magna cursus a. Ut efficitur congue enim, id facilisis est. Vestibulum posuere
-                tincidunt purus vitae convallis. Praesent consequat eget metus et ultrices. Aliquam ut massa tortor.
-                Pellentesque ultricies sed urna et faucibus. Pellentesque velit lectus, placerat in eleifend in,
-                blandit non nulla.</p>
-
-            <p>Duis facilisis ornare lacus, sit amet volutpat odio finibus non. Duis quis metus non enim
-                ullamcorper ornare. Nulla aliquet lacus felis, ac porta eros consectetur quis. Vivamus malesuada
-                augue convallis dictum vehicula. Cras eu lacus vitae ex rutrum maximus lobortis suscipit nulla.
-                Aliquam vitae tortor et felis porta posuere ut eu lectus. Vivamus luctus augue turpis, sit amet
-                accumsan mauris maximus at. Fusce tempor rutrum justo, vitae tincidunt dui tincidunt sit amet.
-                Suspendisse eget sollicitudin odio. Nulla fermentum metus enim, pellentesque lacinia felis vulputate
-                vel. Ut eu lacus ullamcorper, scelerisque nulla et, dapibus augue. Duis ac urna nec felis ultricies
-                ornare nec vitae ligula.</p>
-        </section>
-        <section id="dos">
-            <h1>SECCION 2</h1>
-            <p>Sed a commodo dolor. Duis aliquam fermentum ligula eleifend lobortis. Morbi volutpat scelerisque
-                libero eu viverra. Sed vehicula maximus eros, ut sagittis neque tristique interdum. Integer vitae
-                odio eget mi euismod iaculis sit amet vel quam. Duis dictum facilisis accumsan. Morbi dapibus nunc
-                eget ullamcorper vehicula. Nam in lacus non orci lacinia pretium ut a ex. Vivamus ultricies ac
-                mauris quis sollicitudin. Nullam lobortis arcu pellentesque tellus consectetur, id eleifend odio
-                gravida. Donec eu vehicula sapien, et vestibulum nunc. Sed laoreet iaculis lectus, at fermentum
-                velit commodo vitae. Phasellus pharetra dictum libero, ut tincidunt metus vehicula ut. Sed quis erat
-                vel dui posuere congue ac dictum nibh. Aenean a maximus tellus, ac lobortis enim.</p>
-
-            <p>Praesent pulvinar turpis et lorem tristique aliquam. In vestibulum velit et tortor tempor imperdiet.
-                Morbi tempor lectus leo, in sagittis orci volutpat id. In lacinia tincidunt vehicula. Suspendisse
-                gravida euismod venenatis. Cras vel nibh ac elit sollicitudin congue. Nam non laoreet purus. Morbi
-                id libero elementum, iaculis augue eu, euismod quam. Duis ut magna in arcu tincidunt laoreet. In
-                tincidunt, quam volutpat dapibus gravida, libero tellus efficitur nunc, a convallis odio magna eget
-                est. Phasellus sed sem nisi.</p>
-
-            <p>Etiam pretium tellus justo, at efficitur tellus suscipit id. In ullamcorper purus sed justo
-                tincidunt lacinia. Donec pulvinar non augue id molestie. Aenean tellus nisl, tincidunt ac leo nec,
-                ultrices accumsan nibh. Cras congue pharetra ante, eget porttitor quam pellentesque ut. Phasellus
-                non commodo dolor. Aenean porta vel turpis in varius.</p>
-
-            <p>Etiam elit neque, porta vel vehicula vitae, tincidunt et dui. Aliquam ullamcorper et ipsum ac
-                venenatis. Integer tincidunt nulla id dui ultrices, quis egestas orci maximus. Morbi placerat dictum
-                odio, et pulvinar dui rhoncus ac. Nunc lacinia tincidunt tincidunt. Etiam at orci nec erat vulputate
-                congue. Vestibulum et tincidunt tellus. Cras arcu enim, pellentesque consequat mauris eget,
-                ultricies auctor erat. Curabitur non massa eget lorem tincidunt posuere sed id lectus. Nulla vel
-                scelerisque est. Integer eget suscipit urna. Donec et sapien id lacus varius vulputate vel at sem.
-                Donec eget nulla eget purus mollis sagittis et nec ante. Aliquam dictum consequat lacus, sit amet
-                efficitur mi sagittis sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-            <p>Nullam finibus, ipsum sit amet molestie ultricies, massa ligula viverra quam, quis imperdiet quam
-                nisl nec ligula. Sed sit amet diam lorem. Aliquam consectetur in metus eget consectetur. Morbi
-                congue massa sapien, vel vulputate leo interdum sit amet. Morbi dictum, orci eu gravida rhoncus,
-                orci mauris convallis sapien, at volutpat risus tortor nec magna. Nullam vulputate nisi et faucibus
-                placerat. Donec auctor dui lacus, et facilisis nisi venenatis at. In varius arcu eu lectus
-                pellentesque, at scelerisque lorem pharetra. Vivamus mauris quam, imperdiet sed mollis at, varius
-                vitae augue. Mauris pellentesque cursus arcu eget aliquam. In leo quam, vulputate nec nisi eu,
-                vestibulum tincidunt nibh.</p>
-        </section>
-        <section id="tres">
-            <h1>SECCION 3</h1>
-            <p>Cras sit amet nibh orci. Praesent sodales urna vitae augue malesuada, eget tincidunt purus
-                condimentum. Aliquam fermentum leo sollicitudin dignissim tincidunt. Suspendisse rhoncus, nunc vitae
-                porta fringilla, orci ipsum ultrices mi, quis tempus massa sapien sit amet orci. Integer lacinia
-                efficitur ex. Pellentesque iaculis ut ligula vel viverra. Sed eget enim quis tortor rutrum euismod.
-                Duis accumsan consectetur lacus, sit amet mollis quam. Nullam luctus tortor sit amet felis convallis
-                dictum. Suspendisse malesuada auctor luctus. In egestas convallis sem et fermentum. Curabitur
-                lacinia erat vel ex vestibulum bibendum. Sed lobortis augue dolor, sed maximus ipsum tristique eget.
-            </p>
-
-            <p>Curabitur dolor est, tempor et sem ut, tincidunt vestibulum libero. Phasellus eu tempor est, sed
-                placerat est. Sed interdum mauris a ante fermentum sollicitudin. Etiam neque nulla, congue ut
-                accumsan nec, pharetra a diam. Duis at interdum purus, vel tempor purus. Vestibulum porta arcu vitae
-                purus tempus pellentesque. Morbi scelerisque lacus vulputate, varius mauris ac, condimentum augue.
-                Nunc volutpat fringilla molestie. Aliquam fermentum pharetra ante et pretium. Sed vulputate neque et
-                egestas pharetra. Maecenas tincidunt sed orci vitae accumsan. Praesent malesuada velit augue, sit
-                amet consequat risus lobortis id. Aenean sed nisi vulputate, vulputate risus in, feugiat lacus.</p>
-
-            <p>Phasellus convallis tortor dolor, at lacinia metus pellentesque quis. Curabitur commodo convallis
-                eros vel vulputate. Vestibulum aliquam justo augue, a accumsan libero mollis vitae. Curabitur non
-                mauris non purus egestas accumsan sed at diam. In hac habitasse platea dictumst. Curabitur efficitur
-                metus eu erat pulvinar, accumsan rutrum sapien scelerisque. Vestibulum tempor condimentum massa, ut
-                venenatis mauris ornare vitae. Vivamus nec tellus mollis, mollis mauris id, placerat mi. Sed tempor
-                mi arcu, non placerat turpis vulputate ut. Quisque vitae condimentum dui. Nulla interdum mauris
-                dolor, ut malesuada lorem ornare non.</p>
-
-            <p>Suspendisse potenti. Cras et metus nunc. In vel purus imperdiet, maximus massa id, tempus ex.
-                Vivamus congue efficitur commodo. Nam malesuada sem sit amet nunc finibus, ac suscipit ante lacinia.
-                Sed ac scelerisque odio. Fusce mattis odio et vulputate congue. Aenean in condimentum massa. Donec
-                sed ornare quam. Nam at velit nec sem volutpat lacinia. Nunc tincidunt euismod metus. Vestibulum a
-                ultrices orci. Etiam nec tincidunt nibh, eu placerat dolor. Duis augue nisl, sollicitudin vel
-                accumsan a, iaculis ac arcu. Etiam quis mauris ac odio interdum iaculis. Donec ultricies mollis orci
-                nec commodo.</p>
-
-            <p>Nam id sodales nunc. In malesuada tortor sit amet dui ullamcorper, ac elementum sapien finibus.
-                Mauris fringilla tortor et ipsum accumsan, consequat dignissim libero faucibus. Aliquam varius
-                tincidunt nunc, quis scelerisque magna suscipit ultrices. Vivamus porttitor orci eget pretium
-                facilisis. Duis non semper velit. Donec convallis porta metus.</p>
-        </section>
-        <footer class="bg-danger text-white">
-            <!-- Grid container -->
-            <div class="container-lg p-4">
-                <!--Grid row-->
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">About Title</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                            atque ea quis molestias. Fugiat pariatur maxime quis culpa
-                            corporis vitae repudiandae aliquam voluptatem veniam, est atque
-                            cumque eum delectus sint!
-                        </p>
-                    </div>
-                    <!--Grid column-->
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">Line 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 4</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Grid column-->
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Contact Us</h5>
-                        <p><i class="fa fa-envelope-o mr-3"></i> info@hsdf.com</p>
-                    </div>
-                    <!--Grid column-->
-                </div>
-                <!--Grid row-->
-            </div>
-            <!-- Grid container -->
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                © 2021 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/">Project.com</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
-    </div>
 </body>
 
 </html>
