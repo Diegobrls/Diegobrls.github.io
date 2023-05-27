@@ -229,3 +229,7 @@ form.submitted .form-control:invalid {
     background-color: #e46969;
     color: white;
 }
+
+section div {
+    margin-bottom: 20px; /* Ajusta el valor según tu preferencia para separar el enlace de la imagen */
+}
