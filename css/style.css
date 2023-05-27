@@ -33,15 +33,17 @@
 }
 
 .azul {
-    color:#001570;
+    color: #001570;
 }
-.azul-fondo{
-    background-color:#001570;
+
+.azul-fondo {
+    background-color: #001570;
 }
 
 .rosa {
     color: #CC55BB;
 }
+
 .rosa-fondo {
     background-color: #CC55BB;
 }
@@ -49,13 +51,15 @@
 .claro {
     color: #FFCC99;
 }
+
 .claro-fondo {
     background-color: #FFCC99;
 }
 
 .burdeos {
-    color:#991155
+    color: #991155
 }
+
 .burdeos-fondo {
     background-color: #991155;
 }
@@ -70,19 +74,26 @@ body {
 
 .titulo {
     font-family: 'Crete Round', serif;
-    border-bottom: 4px solid #FFCC99; /* Cambia #FF0000 por el color deseado */
-    padding-bottom: 10px; /* Ajusta el valor según el espacio que quieras entre el texto y la barra */
-    width: 30%; /* Ajusta el porcentaje según la longitud deseada */
-    text-align: center; /* Alinea el texto al centro */
-    margin: 0 auto; /* Centra horizontalmente el título */
+    border-bottom: 4px solid #FFCC99;
+    /* Cambia #FF0000 por el color deseado */
+    padding-bottom: 10px;
+    /* Ajusta el valor según el espacio que quieras entre el texto y la barra */
+    width: 30%;
+    /* Ajusta el porcentaje según la longitud deseada */
+    text-align: center;
+    /* Alinea el texto al centro */
+    margin: 0 auto;
+    /* Centra horizontalmente el título */
     margin-bottom: 50px;
-    display: block; /* Asegura que ocupe todo el ancho disponible */
-    max-width: 100%; /* Asegura que no exceda el ancho máximo de la página */
+    display: block;
+    /* Asegura que ocupe todo el ancho disponible */
+    max-width: 100%;
+    /* Asegura que no exceda el ancho máximo de la página */
 }
 
 .entradilla {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
     text-align: center;
     font-weight: 700;
     color: #fff;
@@ -137,13 +148,13 @@ h6 {
     font-weight: 700;
     margin-bottom: 20px;
     color:
-    #fff;
+        #fff;
 }
 
 .hero h3 {
-    font-size:36px;
+    font-size: 36px;
     font-weight: 500;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     color: #fff;
 }
 
@@ -275,9 +286,12 @@ form.submitted .form-control:invalid {
 # Acordeon
 ----------------------------------------------------------------*/
 .acordeon_personalizado {
-    background-color: #DC3545 ; /* Cambia el color de fondo a un rojo brillante */
-    color: #fff; /* Cambia el color del texto a blanco para mayor contraste */
+    background-color: #DC3545;
+    /* Cambia el color de fondo a un rojo brillante */
+    color: #fff;
+    /* Cambia el color del texto a blanco para mayor contraste */
 }
+
 .accordion-button:not(.collapsed) {
     background-color: #DC3545;
     color: white;
@@ -291,10 +305,58 @@ form.submitted .form-control:invalid {
 }
 
 section div {
-    margin-bottom: 20px; /* Ajusta el valor según tu preferencia para separar el enlace de la imagen */
+    margin-bottom: 20px;
+    /* Ajusta el valor según tu preferencia para separar el enlace de la imagen */
 }
 
 .btn-hover:hover {
-    background-color: #ffcc99b6; /* Cambia #FF0000 por el color deseado */
+    background-color: #ffcc99b6;
+    /* Cambia #FF0000 por el color deseado */
 }
 
+/******************* OCIO ****************************/
+/*--------------------------------------------------------------
+# card
+----------------------------------------------------------------*/
+.card-button {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(220, 53, 69, 0);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.card-button:hover::before {
+    opacity: 1;
+    background-color: rgba(220, 53, 69, 0.7);
+}
+
+.card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card-button:hover .card-text {
+    opacity: 1;
+}
