@@ -11,8 +11,11 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
+
+
+
+
 :root {
-    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-primary: "Montserrat", sans-serif;
     --font-secondary: "Poppins", sans-serif;
 }
@@ -29,12 +32,60 @@
     scroll-behavior: smooth;
 }
 
+.azul {
+    color:#001570;
+}
+.azul-fondo{
+    background-color:#001570;
+}
+
+.rosa {
+    color: #CC55BB;
+}
+.rosa-fondo {
+    background-color: #CC55BB;
+}
+
+.claro {
+    color: #FFCC99;
+}
+.claro-fondo {
+    background-color: #FFCC99;
+}
+
+.burdeos {
+    color:#991155
+}
+.burdeos-fondo {
+    background-color: #991155;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-    font-family: var(--font-default);
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color: var(--color-default);
+}
+
+.titulo {
+    font-family: 'Crete Round', serif;
+    border-bottom: 4px solid #FFCC99; /* Cambia #FF0000 por el color deseado */
+    padding-bottom: 10px; /* Ajusta el valor según el espacio que quieras entre el texto y la barra */
+    width: 30%; /* Ajusta el porcentaje según la longitud deseada */
+    text-align: center; /* Alinea el texto al centro */
+    margin: 0 auto; /* Centra horizontalmente el título */
+    margin-bottom: 50px;
+    display: block; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 100%; /* Asegura que no exceda el ancho máximo de la página */
+}
+
+
+
+h1 {
+    font-family: 'Crete Round', serif;
+    color: #001570;
+    font-weight: 700;
 }
 
 a {
@@ -43,7 +94,7 @@ a {
 }
 
 a:hover {
-    color: #00b6a1;
+    color: #ff5858;
     text-decoration: none;
 }
 
@@ -63,7 +114,7 @@ h6 {
     width: 100%;
     position: relative;
     background: var(--color-primary);
-    padding: 60px 0 0 0;
+    padding: 0;
 }
 
 @media (min-width: 1365px) {
@@ -232,4 +283,8 @@ form.submitted .form-control:invalid {
 
 section div {
     margin-bottom: 20px; /* Ajusta el valor según tu preferencia para separar el enlace de la imagen */
+}
+
+.btn-hover:hover {
+    background-color: #ffcc99b6; /* Cambia #FF0000 por el color deseado */
 }
