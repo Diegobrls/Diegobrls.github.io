@@ -80,6 +80,15 @@ body {
     max-width: 100%; /* Asegura que no exceda el ancho máximo de la página */
 }
 
+.entradilla {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:60px;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    background-color: #DC3545;
+}
+
 
 
 h1 {
@@ -288,3 +297,4 @@ section div {
 .btn-hover:hover {
     background-color: #ffcc99b6; /* Cambia #FF0000 por el color deseado */
 }
+
