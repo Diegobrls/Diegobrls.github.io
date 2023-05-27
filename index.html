@@ -23,7 +23,7 @@
 <!-- BARRA DE NAVEGACION -->
 
 <body>
-    <nav class="navbar bg-danger navbar-expand-lg fw-bold">
+    <nav class="navbar bg-danger navbar-expand-lg fw-bold sticky-top">
         <div class="container">
             <a href="#" class="navbar-brand text-light">HOME</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -46,9 +46,10 @@
                         <a href="#footer" class="nav-link text-light">Seccion 4</a>
                     </li>
                 </ul>
-                <button class="btn btn-dark text-light fw-bold rounded-pill mx-3 mt-lg-0 mt-3">
+                <a href="#cuatro" class="btn btn-dark text-light fw-bold rounded-pill mx-3 mt-lg-0 mt-3">
                     Contact us
-                </button>
+                </a>
+                
             </div>
         </div>
     </nav>
@@ -253,9 +254,39 @@
             facilisis. Duis non semper velit. Donec convallis porta metus.</p>
     </section>
 
+    <!-- COMIENZO SECCIÓN DE CONTACTO -->
+
+    <!-- FIN SECCIÓN DE CONTACTO -->
+    <section id="cuatro">
+        <div class="container py-5">
+            <h1>Formulario de Contacto</h1>
+            <form id="contactForm" method="POST" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                    <div class="invalid-feedback">Por favor, introduce tu nombre.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    <div class="invalid-feedback">Por favor, introduce un correo electrónico válido.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Consulta:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    <div class="invalid-feedback">Por favor, introduce tu consulta.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    
+        <!-- Enlace al archivo JavaScript -->
+        <script src="js/funciones.js"></script>
+    
+    </section>
     <!-- COMIENZO FOOTER -->
 
-    <footer class="bg-danger text-white">
+    <footer id="footer" class="bg-danger text-white">
         <!-- Grid container -->
         <div class="container-lg p-4">
             <!--Grid row-->
