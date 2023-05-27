@@ -202,3 +202,30 @@ h6 {
 .hero .icon-box:hover .icon {
     color: #fff;
 }
+
+/*--------------------------------------------------------------
+# Sección de contacto
+--------------------------------------------------------------*/
+form.submitted .form-control:invalid {
+    border-color: #ced4da;
+}
+
+/******************* ESTANCIA ****************************/
+/*--------------------------------------------------------------
+# Acordeon
+----------------------------------------------------------------*/
+.acordeon_personalizado {
+    background-color: #DC3545 ; /* Cambia el color de fondo a un rojo brillante */
+    color: #fff; /* Cambia el color del texto a blanco para mayor contraste */
+}
+.accordion-button:not(.collapsed) {
+    background-color: #DC3545;
+    color: white;
+}
+
+.acordeon_personalizado.active,
+.acordeon_personalizado:focus,
+.acordeon_personalizado:hover {
+    background-color: #e46969;
+    color: white;
+}
