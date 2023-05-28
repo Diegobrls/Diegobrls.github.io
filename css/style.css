@@ -14,6 +14,10 @@
 
 
 
+.espacio {
+    height: 100px; /* Establece la altura del espacio */
+    width: 100%; /* Establece el ancho del espacio al 100% */
+}
 
 :root {
     --font-primary: "Montserrat", sans-serif;
