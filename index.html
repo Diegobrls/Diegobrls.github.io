@@ -7,12 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viaje a Tokyo</title>
     <!-- Enlace estilo bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Enlace script bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-hK2xLV7rw3CQ/y9vUADvG39v3aigvVzwg+4ceLpjO5I4p4DK+J5Hkz7H5RwWso68"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Enlace favicon -->
     <link href="img/favicon-32x32.png" rel="icon">
     <!-- Enlace font awesome -->
@@ -33,7 +30,7 @@
 <body>
     <nav class="navbar bg-danger navbar-expand-lg fw-bold sticky-top">
         <div class="container">
-            <a href="#" class="navbar-brand text-light">HOME</a>
+            <a href="index.html" class="navbar-brand text-light">HOME</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
                 aria-controls="navbarSupportedContent">
@@ -45,19 +42,31 @@
                         <a href="#uno" class="nav-link text-light">¿Por qué Tokio?</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#dos" class="nav-link text-light">Seccion 2</a>
+                        <a href="#dos" class="nav-link text-light">Historia y actualidad</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#tres" class="nav-link text-light">Seccion 3</a>
+                        <a href="#tres" class="nav-link text-light">Formulario</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#footer" class="nav-link text-light">Seccion 4</a>
+                        <a href="#footer" class="nav-link text-light">footer</a>
                     </li>
+                    <div class="dropdown">
+                        <a class="btn claro-fondo text-black dropdown-toggle btn-hover" href="#" role="button"
+                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Secciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="vuelos.html">vuelos</a></li>
+                            <li><a class="dropdown-item" href="estancias.html">estancias</a></li>
+                            <li><a class="dropdown-item" href="gastronomia.html">gastronomia</a></li>
+                            <li><a class="dropdown-item" href="ocio.html">ocio</a></li>
+                        </ul>
+                    </div>
                 </ul>
-                <a href="#cuatro" class="btn azul-fondo text-light fw-bold rounded-pill mx-3 mt-lg-0 mt-3">
-                    Contact us
-                </a>
-
+                <a href="/index.html#cuatro"><button
+                        class="btn btn-dark text-light fw-bold rounded-pill mx-3 mt-lg-0 mt-3">
+                        Contact us
+                    </button></a>
             </div>
         </div>
     </nav>
@@ -194,81 +203,97 @@
         <div class="espacio"></div>
 
         <!-- COMIENZO HISTORIA Y ACTUALIDAD -->
-        <!-- <section id="dos" class="m-5">
+        <section id="dos" class="m-5">
             <h1 class="titulo">Historia y actualidad</h1>
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <div class="image-container" style="background-image: url('/img/ola_kanagawa.jpg');">
                         <div class="content-box">
-                            <h3>Título de la columna 1</h3>
-                            <p>Contenido de la columna 1</p>
+                            <h3>La historia de Japon</h3>
+                            <p>Japón, una nación insular en el este de Asia, tiene una historia rica y fascinante que se
+                                remonta a miles de años. </p>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#modal1">Abrir
-                                modal</button>
+                                data-bs-target="#modal1">
+                                Abrir modal
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="image-container" style="background-image: url('/img/manga.jpg');">
                         <div class="content-box">
-                            <h3>Título de la columna 2</h3>
-                            <p>Contenido de la columna 2</p>
+                            <h3>Japon en la actualidad</h3>
+                            <p>Japón sigue siendo un referente mundial en cuanto a su cultura popular. </p>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#modal2">Abrir
-                                modal</button>
+                                data-bs-target="#modal2">
+                                Abrir modal
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        
-        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
+        <!-- Modal 1 -->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                        <h5 class="modal-title" id="modal1Label">La historia de Japon</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Show a second modal and hide this one with the button below.
+                        Desde los primeros asentamientos humanos en el archipiélago hasta su transformación en una
+                        potencia global, Japón ha experimentado numerosos eventos y cambios que han dejado huella en su
+                        identidad. Durante siglos, el país estuvo gobernado por una serie de dinastías imperiales,
+                        conocidas como los emperadores, quienes mantuvieron un poder simbólico a lo largo de los años.
+                        En la época feudal, Japón vivió un período de guerras internas entre los señores de la guerra
+                        conocidos como los samuráis. Sin embargo, en el siglo XIX, Japón se abrió al mundo y emprendió
+                        un proceso de modernización y occidentalización bajo el mandato del emperador Meiji. Desde
+                        entonces, Japón ha experimentado un rápido crecimiento económico y se ha convertido en una
+                        potencia tecnológica y cultural reconocida en todo el mundo.
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
-                            data-bs-toggle="modal">Open second modal</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
-            tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
+
+        <!-- Modal 2 -->
+        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                        <h5 class="modal-title" id="modal2Label">Japon en la actualidad</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Hide this modal and show the first with the button below.
+                        El país ha exportado una amplia variedad de manifestaciones artísticas y culturales que han
+                        cautivado a personas de todo el mundo. Desde la animación japonesa, conocida como anime, hasta
+                        los populares videojuegos, como el icónico Super Mario, Japón ha dejado una marca indeleble en
+                        la cultura pop global. Además, la moda japonesa se ha convertido en una influencia destacada,
+                        con estilos vanguardistas y coloridos que atraen la atención de la industria de la moda
+                        internacional. Otro aspecto destacado de la cultura popular japonesa es la música, con géneros
+                        como el J-Pop y el J-Rock ganando seguidores en todo el mundo. Además, las tradiciones
+                        ancestrales como el arte del té, el teatro Kabuki y los festivales Matsuri siguen siendo parte
+                        integral de la vida diaria de los japoneses, brindando un equilibrio entre la modernidad y la
+                        preservación de la herencia cultural. En resumen, la cultura popular de Japón sigue
+                        evolucionando y cautivando a audiencias globales con su creatividad, innovación y rica
+                        tradición.
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back
-                            to first</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
             </div>
         </div>
-        <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
-
-
-
         <!-- FIN HISTORIA Y ACTUALIDAD -->
 
         <div class="espacio"></div>
 
         <!-- COMIENZO SECCIÓN DE CONTACTO -->
-        <section id="cuatro">
+        <section id="tres">
             <div class="container py-5 mb-5">
                 <h1 class="titulo">Formulario de Contacto</h1>
                 <form id="contactForm" method="POST" class="needs-validation" novalidate>
@@ -294,7 +319,7 @@
         <!-- FIN SECCIÓN DE CONTACTO -->
 
         <!-- Enlace al archivo JavaScript -->
-        <script src="js/funciones.js"></script>
+        <script src="js/formulario.js"></script>
 
         <div class="espacio"></div>
 
@@ -309,39 +334,59 @@
             <div class="row">
                 <!--Grid column-->
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">About Title</h5>
+                    <h5 class="text-uppercase">SOBRE MI</h5>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                        atque ea quis molestias. Fugiat pariatur maxime quis culpa
-                        corporis vitae repudiandae aliquam voluptatem veniam, est atque
-                        cumque eum delectus sint!
+                        Esta página ha sido creada por gusto personal y no tiene carácter profesional. Ha sido
+                        desarrollada con pasión y dedicación, y espero que disfruten de su contenido. Toda la
+                        información proporcionada puede no ser precisa, pero ha sido seleccionada con el objetivo de
+                        brindar una experiencia agradable. ¡Gracias por visitarnos y espero que les guste!"
                     </p>
                 </div>
                 <!--Grid column-->
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
+                    <h5 class="text-uppercase">Otros destinos</h5>
                     <ul class="list-unstyled mb-0">
                         <li>
-                            <a href="#!" class="text-white">Line 1</a>
+                            <a href="https://www.viaje.jp/destinos#hokkaido" class="text-white">Área Hokkaido</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-white">Link 2</a>
+                            <a href="https://www.viaje.jp/destinos#tohoku" class="text-white">Área de Tohoku</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-white">Link 3</a>
+                            <a href="https://www.viaje.jp/destinos#kanto" class="text-white">Área de Kanto</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-white">Link 4</a>
+                            <a href="https://www.viaje.jp/destinos#chubu" class="text-white">Área de Chubu</a>
+                        </li>
+                        <li>
+                            <a href="https://www.viaje.jp/destinos#kinki" class="text-white">Área de Kinki</a>
+                        </li>
+                        <li>
+                            <a href="https://www.viaje.jp/destinos#chugoku" class="text-white">Área de Chūgoku</a>
+                        </li>
+                        <li>
+                            <a href="https://www.viaje.jp/destinos#shikoku" class="text-white">Área de Shikoku</a>
+                        </li>
+                        <li>
+                            <a href="https://www.viaje.jp/destinos#kyushu" class="text-white">Área de Kyushu</a>
+                        </li>
+                        <li>
+                            <a href="https://www.viaje.jp/destinos#okinawa" class="text-white">Área de Okinawa</a>
                         </li>
                     </ul>
                 </div>
+                
                 <!--Grid column-->
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase">Contact Us</h5>
-                    <p><i class="fa fa-envelope-o mr-3"></i> info@hsdf.com</p>
+                    <p><a href="https://www.google.com/intl/es/gmail/about/" class="text-white contact-link"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> dsanbri182@g.educaand.es</a></p>
+                    <p><a href="https://github.com/Diegobrls" class="text-white contact-link"><i class="fa-brands fa-github" style="color: #ffffff;"></i> Diegobrls</a></p>
+                    <p><a href="https://www.instagram.com/diegobrls/" class="text-white contact-link"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i> @diegobrls</a></p>
+                    <p><a href="https://twitter.com/diegamen13" class="text-white contact-link"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i> @diegamen13</a></p>
                 </div>
+                
                 <!--Grid column-->
             </div>
             <!--Grid row-->
@@ -349,8 +394,9 @@
         <!-- Grid container -->
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-            © 2021 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">Project.com</a>
+            © 2023 Copyright:
+            <a class="text-white"
+                href="https://github.com/Diegobrls/Diegobrls.github.io/new/main?readme=1">Diegobrls.github.io</a>
         </div>
         <!-- Copyright -->
     </footer>

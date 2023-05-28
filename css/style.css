@@ -97,6 +97,16 @@ body {
     /* Asegura que no exceda el ancho máximo de la página */
 }
 
+/* links */
+.contact-link {
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+    color: #ff6666;
+}
+
 /* Estilos específicos para dispositivos móviles */
 @media (max-width: 768px) {
     .titulo {
