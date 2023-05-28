@@ -55,6 +55,9 @@
 .claro-fondo {
     background-color: #FFCC99;
 }
+.clarisimo-fondo {
+    background-color: #ffe6ce;
+}
 
 .burdeos {
     color: #991155
@@ -78,8 +81,8 @@ body {
     /* Cambia #FF0000 por el color deseado */
     padding-bottom: 10px;
     /* Ajusta el valor según el espacio que quieras entre el texto y la barra */
-    width: 30%;
-    /* Ajusta el porcentaje según la longitud deseada */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
     text-align: center;
     /* Alinea el texto al centro */
     margin: 0 auto;
@@ -89,6 +92,13 @@ body {
     /* Asegura que ocupe todo el ancho disponible */
     max-width: 100%;
     /* Asegura que no exceda el ancho máximo de la página */
+}
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 1.5em; /* Tamaño de fuente ajustable */
+        margin-bottom: 30px; /* Espacio inferior ajustable */
+    }
 }
 
 .entradilla {
@@ -316,6 +326,16 @@ section div {
 
 /******************* OCIO ****************************/
 /*--------------------------------------------------------------
+# introduccion
+----------------------------------------------------------------*/
+
+.reducir-altura-imagen {
+    max-height: 400px;
+    /* Ajusta esta altura según tus necesidades */
+}
+
+
+/*--------------------------------------------------------------
 # card
 ----------------------------------------------------------------*/
 .card-button {
@@ -359,4 +379,16 @@ section div {
 
 .card-button:hover .card-text {
     opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# tours
+----------------------------------------------------------------*/
+.custom-list-group {
+    max-width: 700px; /* Ajusta el valor según tus necesidades */
+    margin: 0 auto;
+}
+
+.custom-list-group .list-group-item:hover {
+    color: black; /* Cambia el color según tus preferencias */
 }
