@@ -136,7 +136,10 @@ h5,
 h6 {
     font-family: var(--font-primary);
 }
+.espacio {
+    padding-top: 30px;
 
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -392,3 +395,41 @@ section div {
 .custom-list-group .list-group-item:hover {
     color: black; /* Cambia el color según tus preferencias */
 }
+
+/*--------------------------------------------------------------
+# calendario
+----------------------------------------------------------------*/
+
+.descubre-mas:hover {
+    background-color: #0056b3;
+    color:white;
+}
+
+.festividad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(234, 235, 244);
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.descubre-mas {
+    background-color: #001570;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+    /* Cambiar el color del popover */
+    .popover-header {
+        background-color: #FFCC99;
+        color: #000000;
+    }
+
+    .popover-body {
+        background-color: #fff;
+        color: #000;
+    }

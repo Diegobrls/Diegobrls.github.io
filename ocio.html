@@ -29,9 +29,9 @@
     <script src="js/cards.js"></script>
     <!-- Bootstrap Bundle JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
-</head>
+    <!-- Enlace calendario -->
 
-<body>
+</head>
     <!-- BARRA DE NAVEGACION -->
     <nav class="navbar bg-danger navbar-expand-lg fw-bold">
         <div class="container">
@@ -53,7 +53,10 @@
                         <a href="#tres" class="nav-link text-light">Tours</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#footer" class="nav-link text-light">Seccion 4</a>
+                        <a href="#cuatro" class="nav-link text-light">Calendario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#footer" class="nav-link text-light">footer</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="btn claro-fondo text-black dropdown-toggle btn-hover" href="#" role="button"
@@ -526,13 +529,23 @@
             presentamos 5 tours con los que de seguro quedarás satisfecho.</p>
         <!-- List group -->
         <div class="list-group custom-list-group" id="myList" role="tablist">
-            <a class="list-group-item list-group-item-action clarisimo-fondo azul fw-bold" href="https://www.civitatis.com/es/tokio/japan-rail-pass/?aid=1834&cmp=VerTokioCaja" target="_blank" role="tab">Excursión privada a Nikko</a>
-            <a class="list-group-item list-group-item-action clarisimo-fondo azul fw-bold" href="https://www.civitatis.com/es/tokio/japan-rail-pass/?aid=1834&cmp=VerTokioCaja" target="_blank" role="tab">Japan Rail Pass con envío incluido</a>
-            <a class="list-group-item list-group-item-action clarisimo-fondo azul fw-bold" href="https://www.civitatis.com/es/tokio/tour-privado-tokio/?aid=1834&cmp=VerTokioCaja" target="_blank" role="tab">Tour privado por Tokio con guía en español</a>
-            <a class="list-group-item list-group-item-action clarisimo-fondo azul fw-bold" href="https://www.civitatis.com/es/tokio/excursion-kamakura-yokohama/?aid=1834&cmp=VerTokioCaja" target="_blank" role="tab">Excursión privada a Kamakura y Yokohama</a>
-            <a class="list-group-item list-group-item-action clarisimo-fondo azul fw-bold" href="https://www.civitatis.com/es/tokio/entrada-disneyland-disneysea-tokio/?aid=1834&cmp=VerTokioCaja" target="_blank" role="tab">Entrada a Disneyland Tokio</a>
+            <a class="list-group-item list-group-item-action clarisimo-fondo azul fw-bold"
+                href="https://www.civitatis.com/es/tokio/japan-rail-pass/?aid=1834&cmp=VerTokioCaja" target="_blank"
+                role="tab">Excursión privada a Nikko</a>
+            <a class="list-group-item list-group-item-action clarisimo-fondo azul fw-bold"
+                href="https://www.civitatis.com/es/tokio/japan-rail-pass/?aid=1834&cmp=VerTokioCaja" target="_blank"
+                role="tab">Japan Rail Pass con envío incluido</a>
+            <a class="list-group-item list-group-item-action clarisimo-fondo azul fw-bold"
+                href="https://www.civitatis.com/es/tokio/tour-privado-tokio/?aid=1834&cmp=VerTokioCaja" target="_blank"
+                role="tab">Tour privado por Tokio con guía en español</a>
+            <a class="list-group-item list-group-item-action clarisimo-fondo azul fw-bold"
+                href="https://www.civitatis.com/es/tokio/excursion-kamakura-yokohama/?aid=1834&cmp=VerTokioCaja"
+                target="_blank" role="tab">Excursión privada a Kamakura y Yokohama</a>
+            <a class="list-group-item list-group-item-action clarisimo-fondo azul fw-bold"
+                href="https://www.civitatis.com/es/tokio/entrada-disneyland-disneysea-tokio/?aid=1834&cmp=VerTokioCaja"
+                target="_blank" role="tab">Entrada a Disneyland Tokio</a>
         </div>
-        
+
         <!-- Tab panes -->
         <div class="tab-content">
             <div class="tab-pane" id="profile" role="tabpanel">...</div>
@@ -541,7 +554,7 @@
             <div class="tab-pane" id="messages" role="tabpanel">...</div>
             <div class="tab-pane" id="settings" role="tabpanel">...</div>
         </div>
-        
+
     </section>
 
 
@@ -549,7 +562,86 @@
 
     <!-- FIN TOURS -->
 
-    <footer class=" bg-danger text-white">
+    <!-- COMIENZO CALENDARIO -->
+    <section id="cuatro" class="m-5 mt-5 espacio">
+        <h1 class="titulo">Calendario de festividades</h1>
+
+        <p>¡Bienvenido al fascinante mundo de las festividades japonesas! Sumérgete en la rica cultura de Japón a través
+            de
+            nuestro calendario de festividades, que te mostrará las celebraciones más importantes a lo largo del año.
+        </p>
+
+        <p>Este cautivador calendario, que comienza el 1 de enero, te invita a descubrir una variedad de festividades
+            únicas y emocionantes que reflejan la tradición, la espiritualidad y el colorido espíritu del pueblo
+            japonés. A
+            medida que exploras el calendario, te encontrarás con las siguientes festividades destacadas:</p>
+
+        <div class="festividad">
+            <div>
+                <h4>Matsuri del Templo Senso-ji</h4>
+                <p>Celebración en honor al famoso Templo Senso-ji en Tokio.</p>
+            </div>
+            <a data-bs-toggle="popover" title="Matsuri del Templo Senso-ji"
+                data-bs-content="La festividad Matsuri del Templo Senso-ji es uno de los festivales más antiguos de Japón. Durante este evento, las calles se llenan de color y animación mientras la gente celebra en honor al Templo Senso-ji. ¡Descubre más sobre esta fascinante festividad!"
+                class="descubre-mas" class="descubre-mas">¡Descubre más!</a>
+        </div>
+
+        <div class="festividad">
+            <div>
+                <h4>Hanami</h4>
+                <p>Celebración de la belleza efímera de las flores de cerezo en flor.</p>
+            </div>
+            <a data-bs-toggle="popover" title="Hanami"
+                data-bs-content="Hanami es una festividad japonesa que celebra la belleza de los cerezos en flor. Es un momento especial en el que el país se transforma en un mar de flores rosadas y blancas. Durante Hanami, las personas se reúnen en parques y jardines para disfrutar de picnics debajo de los sakura y contemplar la naturaleza en su máximo esplendor. ¡Sumérgete en la poesía y encanto del Hanami en Japón!"
+                class="descubre-mas">¡Descubre más!</a>
+        </div>
+
+        <div class="festividad">
+            <div>
+                <h4>Festival de las Linternas de Toro Nagashi</h4>
+                <p> Experiencia mágica y contemplativa en el río Sumida en Tokio.</p>
+            </div>
+            <a data-bs-toggle="popover" title="Festival de las Linternas de Toro Nagashi"
+                data-bs-content=" El Festival de las Linternas de Toro Nagashi es una experiencia mágica y contemplativa que tiene lugar durante el verano en el río Sumida en Tokio. Miles de linternas flotantes iluminan el río mientras los participantes lanzan pequeñas embarcaciones de papel con velas encendidas como un gesto de gratitud hacia sus antepasados."
+                class="descubre-mas">¡Descubre más!</a>
+        </div>
+
+        <div class="festividad">
+            <div>
+                <h4>Tanabata</h4>
+                <p> Festividad de verano que celebra el encuentro anual de dos estrellas.</p>
+            </div>
+            <a data-bs-toggle="popover" title="Tanabata"
+                data-bs-content=" Con raíces en una antigua leyenda japonesa, Tanabata es una festividad de verano que celebra el encuentro anual de dos estrellas, Orihime y Hikoboshi, que representan a la Princesa Vega y al Pastor Altair respectivamente. Durante este festival, la gente cuelga coloridos y decorativos deseos en bambúes para que se cumplan. Es un evento lleno de romance y esperanza, donde las calles se adornan con hermosas decoraciones y se realizan coloridas exhibiciones de fuegos artificiales."
+                class="descubre-mas">¡Descubre más!</a>
+        </div>
+
+        <p>Estas son solo algunas de las fascinantes festividades que podrás encontrar en nuestro calendario. Cada una
+            de
+            ellas tiene su propia historia y significado profundo, y te invitamos a explorar más sobre ellas mientras
+            navegas a través de nuestro calendario.</p>
+
+        <div class="alert alert-danger mt-4 mb-4" role="alert">
+            Recuerda que el calendario se encuentra localizado en la fecha en la que lo estés viendo, las festividades
+            están situadas a partir de enero de 2024 para que puedas planificarlas con tiempo y saber el dia exacto en
+            que se realizarán ya que hay muchas que no tienen una fecha fija.
+        </div>
+
+        <p class="mb-5">¡Sumérgete en la maravillosa tradición y el esplendor de las festividades japonesas a través de
+            nuestro
+            encantador calendario de festividades!</p>
+
+        <div style="display: flex; justify-content: center;">
+            <iframe
+                src="https://calendar.google.com/calendar/embed?src=54def8dd302429a82f97f098722e47c14da552ab0f63eed1e11b3b696f52b7a2%40group.calendar.google.com&ctz=Europe%2FMadrid"
+                style="border: 0; width: 800px; height: 600px;" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+    </section>
+    <!-- FIN CALENDARIO -->
+
+    <!-- COMIENZO FOOTER -->
+    <footer class=" bg-danger text-white pt-2">
         <!-- Grid container -->
         <div class="container-lg p-4">
             <!--Grid row-->
@@ -601,6 +693,12 @@
         </div>
         <!-- Copyright -->
     </footer>
-</body>
+    </body>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
 
 </html>
