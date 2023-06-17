@@ -10,8 +10,34 @@
 # Set main reusable colors and fonts using CSS variables
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
-/* Fonts */
+/* VALIDACION */
+.error {
+    color: red;
+    font-size: 70%;
+    visibility: hidden;
+}
 
+.obligatorio {
+    color: red;
+}
+
+/* FIN VALIDACION */
+
+/*Boton enviar*/
+.custom-button {
+    background-color: #001570;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.custom-button:hover {
+    background-color: #403bce;
+}
+
+/* Fonts */
 .espacio {
     height: 100px; /* Establece la altura del espacio */
     width: 100%; /* Establece el ancho del espacio al 100% */
