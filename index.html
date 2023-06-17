@@ -299,7 +299,7 @@
 
         <!-- COMIENZO SECCION DE CONTACTO -->
         <section id="tres" class="m-5 azul clarisimo-fondo p-5 rounded-4 shadow">
-            <h1 class="title text-center">Introducción de datos</h1>
+            <h1 class="title text-center">Formulario de contacto</h1>
             <form method="post" onsubmit="return validar()" action="index.html">
                 <!--NOMBRE-->
                 <div class="mb-3">
@@ -351,7 +351,7 @@
                 <div class="mb-3">
                     <select class="form-select" aria-label="Default select example" id="provincia"
                         onfocus="quitarError(this,'errorProvincia')">
-                        <option value="0" selected>Elige provincia</option>
+                        <option value="0" selected>Elija una provincia</option>
                         <option value="1">Málaga</option>
                         <option value="2">Cádiz</option>
                         <option value="3">Sevilla</option>
@@ -371,11 +371,11 @@
                 </div>
                 <!--CASILLA DE VERIFICACION-->
                 <div class="mb-3">
-                    <label for="verificacion" class="form-label">Verificación</label>
+                    <label for="verificacion" class="form-label">Términos y condiciones</label>
                     <input type="checkbox" class="form-check-input" id="verificacion"
                         onfocus="quitarError(this,'errorVerificacion')">
                     <div class="error" id="errorVerificacion">
-                        Acepta los términos y condiciones
+                        Marque la casilla para aceptar los términos
                     </div>
                 </div>
                 <!--ENVIAR-->
